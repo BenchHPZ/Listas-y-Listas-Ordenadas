@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Implementación de una Lista</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imagenes/js.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Implementación de una lista ordenada</h1>
+    <label for="num">Introduzca un número</label>
+    <input type="text" id="num" value="" placeholder="Entero" onfocus="cleanData()">
+    
+    
+    <button id="addButton" onclick="addNumber(document.getElementById ('num').value);">Añade número</button>
+    <button id="removeButton" onclick="removeNumber(document.getElementById ('num').value);">Consume número</button>
+
+    <br><br>
+    <p id="error" style="color:red"></p> 
+    <div id="list"></div>
+    <script src="js/listas_Ordenadas_Standard.js"></script>
+</body>
+</html>
